@@ -1,0 +1,49 @@
+$bgColor: #50514F;
+$gridLine: 1px solid #FDFFFC;
+$alive: #247BA0;
+$newborn: #70C1B3;
+
+body {
+	background-color: #D6D1B1;
+}
+#board{
+	background-color: $bgColor;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 600px;
+	height: 600px;
+}
+
+.control-bar {
+	margin: 10px 0 5px 150px;
+}
+
+.btn {
+	margin-right: 10px;
+}
+
+.gen-label {
+	margin-left: 100px;
+	font-weight: bold;
+}
+
+.cell {
+	width: 10px;
+	height: 10px;
+	border-top: $gridLine;
+	border-left: $gridLine;
+
+	display: inline-block;
+	margin: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.alive {
+	background-color: $alive;
+}
+
+.newborn {
+	background-color: $newborn;
+}
